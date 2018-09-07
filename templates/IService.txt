@@ -1,0 +1,9 @@
+using App.Domain.Def.Base;
+using App.Domain.Def.DTO.{schema};
+
+namespace App.Domain.Def.Definitions.{schema}
+{
+    public interface I{entity}Service : IBaseSharedService<{entity}DTO>
+    {
+    }
+}

@@ -1,0 +1,6 @@
+namespace App.Domain.Def.DTO.{schema}
+{
+    public class {entity}DTO
+    {
+    }
+}

@@ -1,0 +1,9 @@
+using App.Repository.Def.POCOS.{schema};
+using App.Repository.Def.Base;
+
+namespace App.Repository.Def.Definitions.{schema}
+{
+    public interface I{entity}Repository : ISharedRepository<{entity}POCO>
+    {
+    }
+}

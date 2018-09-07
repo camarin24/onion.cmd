@@ -1,0 +1,17 @@
+using App.Domain.Def.Definitions.{schema};
+using App.Domain.Def.DTO.{schema};
+using App.Api.Base;
+
+namespace App.Api.Controllers.Api.{schema}
+{
+    public class {entity}Controller : BaseApiController<{entity}DTO>
+    {
+
+        I{entity}Service _service;
+        public {entity}Controller(I{entity}Service service)
+            :base(service)
+        {
+            _service = service;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+using App.Model.Base;
+using App.Model.Def.Base;
+using App.Model.Def.Entities.{schema};
+using App.Repository.Base;
+using App.Repository.Def.POCOS.{schema};
+
+namespace App.Repository.Implementations.{schema}
+{
+    public class {entity}Repository : BasePOCORepository<{entity}Entity, {entity}POCO>, Def.Definitions.{schema}.I{entity}Repository
+    {
+        public {entity}Repository()
+        : base({entity}Properties.Build())
+        {
+        }
+    }
+
+
+
+    class {entity}Properties : BaseTableProperties<{entity}Entity>
+    {
+        public override string Sheema => "{schema}";
+        public override string TableName => "{table}";
+
+        public static IBaseModel<{entity}Entity> Build()
+        {
+            return new BaseModel<{entity}Entity>(new {entity}Properties());
+        }
+    }
+}
+

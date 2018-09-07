@@ -1,0 +1,9 @@
+namespace App.Model.Def.Entities.{schema}
+{
+    public class {entity}Entity
+    {
+        public {entity}Entity()
+        {
+        }
+    }
+}

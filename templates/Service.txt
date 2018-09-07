@@ -1,0 +1,15 @@
+using App.Domain.Def.Definitions.{schema};
+using App.Domain.Def.DTO.{schema};
+using App.Repository.Def.Definitions.{schema};
+using App.Repository.Def.POCOS.{schema};
+
+namespace App.Domain.Services.Implementations.{schema}
+{
+    public class {entity}Service : Base.BaseSharedService<{entity}DTO, {entity}POCO>, I{entity}Service
+    {
+        public {entity}Service(I{entity}Repository {entity}Repository)
+            : base({entity}Repository)
+        {
+        }
+    }
+}
