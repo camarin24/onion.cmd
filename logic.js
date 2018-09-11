@@ -1,12 +1,12 @@
 const fs = require('fs');
 const create = params => {
-  // createEntity(params);
-  // createPoco(params);
-  // createIRepository(params);
-  // createDTO(params);
-  // createIService(params);
-  // createRepository(params);
-  // createService(params);
+  createEntity(params);
+  createPoco(params);
+  createIRepository(params);
+  createDTO(params);
+  createIService(params);
+  createRepository(params);
+  createService(params);
   createController(params);
 };
 
